@@ -66,6 +66,30 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: -0.05em;
 }
 
+body {
+    background-image: url("FoodieFun Pics/Veggie Zen.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no repeat;
+    background-size: cover;
+} 
+
+body, input, select, textarea {
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    padding: 0;
+    font-size: 13pt;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+strong, b {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 600;
+}
+
+
 #mainTiles {
     min-height: 100vh;
     display: flex;
@@ -97,17 +121,10 @@ h1, h2, h3, h4, h5, h6 {
     box-shadow: 0 0 0 10px #ffffff;
 }
 
-#mainTiles .tile.span-1 {
-    width: 20em;
-}
-
-#mainTiles .tile.span-2 {
-    width: 30em;
-}
-
-#mainTiles .tile.span-3 {
+#mainTiles .tile.span {
     width: 40em;
 }
+
 
 #mainTiles .tile.title {
     background-color: #d64760;
@@ -117,6 +134,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-content: center;
     padding: 1em 3em;
 }
+
 
 #mainTiles .tile.title h1 {
     font-size: 3em;
@@ -160,6 +178,4 @@ h1, h2, h3, h4, h5, h6 {
     object-fit: cover;
     /* object-fit: scale-down; */
     object-position: center;
-    transition: opacity 0.75s ease-in-out;
-    transition-delay: 1.25s;
 }
