@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
+@import url("fontawesome-all.min.css");
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: -0.05em;
+ }
+
+ body, select, textarea {
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    padding: 0;
+    font-size: 13pt;
+    color: rgba(255, 255, 255, 0.6);
+ }
+
+
+
+
+
+body{
+    font-family: fantasy;
+    background-image: url(images/Veggie\ Zen.jpg);
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no repeat;
+    background-size: cover;
+}
+
+
+
+.ContactUs{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.head{
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.doyou{
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    width: 43%;
+}
+
+
+
+.contact-form{
+    max-width: 500px;
+    margin: 2rem auto;
+    border: 2px solid tan;
+    padding: 2rem;
+    border-radius: 5px;
+}
+
+label{
+    display: block;
+    padding: 1rem 0 .5rem;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+
+input, textarea{
+    display: block;
+    width: 100%;
+    border: 2px solid black;
+    padding: .5rem;
+    font-size:18px;
+    border-radius: 5px;
+    background-color:white;
+    transition-duration: 500ms;
+    color: black;
+}
+
+textarea:hover{
+    background: #d64760;
+}
+input:hover{
+    background: #d64760;
+}
+
+#submitButton{
+    border:0;
+    background: red;
+    padding: .5rem;
+    color:white;
+    margin:1rem 0;
+    width: auto;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#submitButton:hover{
+    background-color: green;
+}
+
+
+
+@media only screen and (max-width: 500px){
+    .doyou{
+        margin: 0;
+        width: 91%;
+    }
+}
