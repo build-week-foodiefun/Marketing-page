@@ -92,6 +92,13 @@ strong, b {
     font-weight: 600;
 }
 
+#navBar .navMenu {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 25em;
+    width: 80%;
+}
+
 
 #mainTiles {
     min-height: 100vh;
