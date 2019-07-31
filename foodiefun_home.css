@@ -107,7 +107,11 @@ strong, b {
 }
 
 @media (max-width: 800px) {
-    
+    #navBar .navMenu {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1em 1em;
+    }
 }
 
 #mainTiles {
