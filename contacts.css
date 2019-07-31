@@ -108,3 +108,11 @@ input:hover{
         width: 91%;
     }
 }
+
+
+@media only screen and (max-width: 800px){
+    .doyou{
+        margin: 0;
+        width: 74%;
+    }
+}
