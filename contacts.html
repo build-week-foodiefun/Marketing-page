@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contact Us!</title>
     <link rel="stylesheet" href="./contacts.css">
-    <script src="contacts.js"></script>
 </head>
 
 
@@ -16,7 +15,7 @@
 
 <body>
 
-<section class="Contact Us" id="contactTop">
+<section class="ContactUs" id="contactTop">
     <h2 class="head">Contact Us</h2>
     <p class="doyou">Do you have any comments or thoughts you'd like to share with us? Kindly fill out the information below and we'll get back to you as soon as possible! We highly appreciate your time, thank you!</p>
 </section>
@@ -26,13 +25,13 @@
     <form class="contact-form"><label for="first-name">
             First Name
         </label>
-        <input type="text" id="first-name">
+        <input type="text" required id="first-name">
 
 
         <label for="last-name">
             Last Name
         </label>
-        <input type="text" id="last-name">
+        <input type="text" required id="last-name">
 
 
         <label for="email">
@@ -44,7 +43,7 @@
         <label for="phone">
             Telephone
         </label>
-        <input type="tel" id="phone">
+        <input type="tel" required id="phone">
 
 
         <label for="message">
@@ -54,10 +53,6 @@
         <textarea id="message"></textarea>
         <input type="submit" value="Send" id="submitButton">
     </form>
-
-
-
-
 
 
 </body>
