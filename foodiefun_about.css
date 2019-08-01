@@ -190,7 +190,7 @@ strong, b {
     opacity: 0.65;
     padding-left: 2.5em;
     padding-bottom: 1em;
-    border-bottom: 1em solid white;
+  
 }
 
 .teamInfo img {
@@ -200,6 +200,7 @@ strong, b {
 	padding-left: 2.5em;
 	max-width: 100%;
 	height: auto;
+	border-bottom: 1em solid white;
 }
 
 @media (max-width: 500px) {
