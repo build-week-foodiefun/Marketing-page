@@ -97,7 +97,6 @@ strong, b {
     justify-content: space-evenly;
     padding: 1em 5em 1em;
     width: 60em;
-/*  */
 }
 
 @media (max-width: 500px) {
