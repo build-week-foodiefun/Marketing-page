@@ -10,6 +10,7 @@
 </head>
 
 <body>
+<<<<<<< HEAD
         <section id="navBar">
                 <div class="navMenu">
                     <a href="https://foodie-fun-front-end.netlify.com/">Sign Up!</a>
@@ -23,6 +24,25 @@
     <h2 class="head">Contact Us</h2>
     <p class="doyou">Do you have any comments or thoughts you'd like to share with us? Kindly fill out the information below and we'll get back to you as soon as possible! We highly appreciate your time, thank you!</p>
 </section>
+=======
+        <header>
+                <div id="nav-about-page">
+                    <nav>
+                        <a href="foodiefun_home.html">Home</a>
+                        <a href="foodiefun_about.html">About</a>
+                        <a href="#">Contact Us</a>
+                        <a href="https://foodie-fun-front-end.netlify.com/">Sign Up</a>
+                    </nav>
+                 </div>
+            </header>
+
+    <section class="ContactUs" id="contactTop">
+        <h2 class="head">Contact Us</h2>
+        <p class="doyou">Do you have any comments or thoughts you'd like to share with us? Kindly fill out the
+            information below and we'll get back to you as soon as possible! We highly appreciate your time, thank you!
+        </p>
+    </section>
+>>>>>>> 24953b9292ce954742923b80f1fdbf43b4d7a5c4
 
 
 
@@ -54,9 +74,33 @@
             Message
         </label>
 
-        <textarea id="message"></textarea>
-        <input type="submit" value="Send" id="submitButton">
+        <textarea id="message" placeholder="Please leave a message..."></textarea>
+        <!-- <input type="submit" value="Send" id="submitButton"> -->
+
+        <div id="submitButton" onClick="onClick()" onmouseover="mouseOver(this)" onmouseout="mouseNotOver(this)">
+            Submit</div>
+
+        <script>
+            function onClick(obj){
+                window.location.reload()
+                document.getElementById('submitButton').style.border = "2px solid blue"
+            }
+
+            function mouseOver(obj) {
+                obj.innerHTML = "Thank You"
+            }
+
+            function mouseNotOver(obj) {
+                obj.innerHTML = "Submit"
+            }
+        </script>
+
+
+
     </form>
 
 
+
 </body>
+
+

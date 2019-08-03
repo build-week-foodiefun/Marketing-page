@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
+@import url("fontawesome-all.min.css");
+
+/* This will be the foodiefun CSS file */
+/* counts as a Stretch goal if we use LESS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+a {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    transition: color 0.25s ease-in-out;
+}
+
+a:hover {
+    color: #d64760;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: -0.05em;
+}
+
+body {
+    background-image: url("FoodieFun Pics/Veggie Zen.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+body, input, select, textarea {
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    padding: 0;
+    font-size: 13pt;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+strong, b {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 600;
+}
+
+#navBar .navMenu {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em 5em 1em;
+    width: 60em;
+
+}
+
+
+
+@media (max-width: 500px) {
+    #navBar .navMenu {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1em 1em;
+    }
+}
+
+@media (max-width: 800px) {
+    #navBar .navMenu {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1em 1em;
+    }
+}
+
+#mainTiles {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: filter 0.5s ease-in-out;
+}
+
+#tileItems {
+    transition: opacity 1s ease-in-out;
+    transition-delay: 0.5s;
+    position: relative;
+    z-index: 1;
+    max-width: 100vw;
+    overflow-x: hidden;
+    padding: 5px;
+}
+
+#tileItems .tileItems{
+    display: flex;
+}
+
+#tileItems .tile {
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin: 5px;
+    height: 16em;
+    box-shadow: 0 0 0 10px #ffffff;
+}
+
+#mainTiles .tile.span {
+    width: 30em;
+}
+
+
+#mainTiles .tile.title {
+    background-color: #d64760;
+    background-image: url("images/overlay.png");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1em;
+    opacity: 0.9;
+}
+
+
+#mainTiles .tile.title h1 {
+    font-size: 3em;
+    line-height: 1em;
+    padding-left: 1em;
+}
+
+#mainTiles .tile.title p {
+    font-size: 1.25em;
+    line-height: 1.5em;
+    margin: 0.5em 0 0 0;
+    opacity: 0.65;
+    padding-left: 2.5em;
+}
+
+#mainTiles .tile.thumb {
+    display: block;
+    position: relative;
+    background: rgba(255, 255, 255, 0.25);
+    cursor: default;
+}
+
+#mainTiles .tile.thumb h2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: rgba(18, 21, 29, 0.85);
+    width: 100%;
+    padding: 1em;
+    font-weight: 400;
+    line-height: 1em;
+    z-index: 2;
+}
+
+#mainTiles .tile.thumb img {
+    display: block;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}

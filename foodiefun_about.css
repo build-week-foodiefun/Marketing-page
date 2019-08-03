@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
+@import url("fontawesome-all.min.css");
+
+/* This will be the foodiefun CSS file */
+/* counts as a Stretch goal if we use LESS */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+a {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    transition: color 0.25s ease-in-out;
+}
+
+a:hover {
+    color: #d64760;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: -0.05em;
+}
+
+body {
+    background-image: url("FoodieFun Pics/Veggie Zen.jpg");
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+body, input, select, textarea {
+    font-family: 'Source Sans Pro';
+    font-weight: 400;
+    padding: 0;
+    font-size: 13pt;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+strong, b {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 600;
+}
+
+#nav-about-page  nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em 5em 1em;
+    width: 30em;
+}
+
+@media (max-width: 500px) {
+	#nav-about-page  nav {
+		display: flex;
+		justify-content: space-evenly;
+		padding: 1em 5em 1em;
+		width: 25em;
+	}
+
+}
+
+#about-top-content {
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin: 5px;
+    height: 10em;
+    width: 20em;
+    box-shadow: 0 0 0 10px #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: filter 0.5s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    transition-delay: 0.5s;
+    position: relative;
+    z-index: 1;
+    max-width: 30em;
+    overflow-x: hidden;
+    padding: 5px;
+    background-color: #d64760;
+    background-image: url(images/overlay.png);
+    padding-top: 1em;
+    padding-left: 1em;
+    opacity: 0.9;
+}
+
+#about-top-content  h1  {
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#about-top-content  {
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (max-width: 500px) {
+	#about-top-content {
+		font-size: .9em;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+#about-middle-content  .teamInfo { 
+    background-color: #d64760;
+    background-image: url(images/overlay.png);
+    padding-top: 1em;
+	margin-top: 5em;
+	box-shadow: 0 0 0 10px #ffffff;
+}
+
+@media (max-width: 500px) {
+	#about-middle-content  .teamInfo  {
+		width: 19em;
+	}
+}
+
+.teamInfo h1 {
+    font-size: 3em;
+    line-height: 1em;
+    padding-left: 1em;
+    padding-top: 1em;
+    
+}
+
+.teamInfo p {
+    font-size: 1.25em;
+    line-height: 1.5em;
+    margin: 0.5em 0 0 0;
+    opacity: 0.65;
+    padding-left: 2.5em;
+    padding-bottom: 1em;
+  
+}
+
+.teamInfo img {
+    height: 15em;
+    width: 30em;
+    padding-top: 2em;
+	padding-left: 2.5em;
+	max-width: 100%;
+	height: auto;
+	border-bottom: 1em solid white;
+}
+
+@media (max-width: 500px) {
+	.teamInfo img {
+		height: 15em;
+		width: 30em;
+		padding-top: 2em;
+		padding-left: 0em;
+		padding-bottom: 2.5em;
+		max-width: 100%;
+		height: auto;
+	}
+}
+
