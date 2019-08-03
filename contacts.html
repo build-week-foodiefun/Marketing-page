@@ -15,10 +15,12 @@
 
 <body>
 
-<section class="ContactUs" id="contactTop">
-    <h2 class="head">Contact Us</h2>
-    <p class="doyou">Do you have any comments or thoughts you'd like to share with us? Kindly fill out the information below and we'll get back to you as soon as possible! We highly appreciate your time, thank you!</p>
-</section>
+    <section class="ContactUs" id="contactTop">
+        <h2 class="head">Contact Us</h2>
+        <p class="doyou">Do you have any comments or thoughts you'd like to share with us? Kindly fill out the
+            information below and we'll get back to you as soon as possible! We highly appreciate your time, thank you!
+        </p>
+    </section>
 
 
 
@@ -50,9 +52,33 @@
             Message
         </label>
 
-        <textarea id="message"></textarea>
-        <input type="submit" value="Send" id="submitButton">
+        <textarea id="message" placeholder="Please leave a message..."></textarea>
+        <!-- <input type="submit" value="Send" id="submitButton"> -->
+
+        <div id="submitButton" onClick="onClick()" onmouseover="mouseOver(this)" onmouseout="mouseNotOver(this)">
+            Submit</div>
+
+        <script>
+            function onClick(obj){
+                window.location.reload()
+                document.getElementById('submitButton').style.border = "2px solid blue"
+            }
+
+            function mouseOver(obj) {
+                obj.innerHTML = "Thank You"
+            }
+
+            function mouseNotOver(obj) {
+                obj.innerHTML = "Submit"
+            }
+        </script>
+
+
+
     </form>
 
 
+
 </body>
+
+
