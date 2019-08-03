@@ -99,7 +99,7 @@ strong, b {
     display: flex;
     justify-content: space-evenly;
     padding: 1em 5em 1em;
-    width: 30em;
+    width: 60em;
 }
 
 @media (max-width: 500px) {
