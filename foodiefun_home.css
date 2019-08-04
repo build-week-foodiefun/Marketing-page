@@ -108,7 +108,8 @@ strong, b {
     #navBar .navMenu {
         display: flex;
         justify-content: space-evenly;
-        padding: 1em 1em;
+        padding: 1em 0em 2em;
+        width: 21em;
     }
 }
 
@@ -155,6 +156,12 @@ strong, b {
     width: 30em;
 }
 
+@media (max-width: 500px) {
+    #mainTiles .tile.span {
+        width: auto;
+    }
+}
+
 
 #mainTiles .tile.title {
     background-color: #d64760;
@@ -164,6 +171,12 @@ strong, b {
     justify-content: center;
     padding-top: 1em;
     opacity: 0.9;
+}
+
+@media (max-width: 500px) {
+    #mainTiles .tile .title {
+        width: auto;
+    }
 }
 
 
@@ -188,6 +201,7 @@ strong, b {
     cursor: default;
 }
 
+
 #mainTiles .tile.thumb h2 {
     position: absolute;
     bottom: 0;
@@ -198,6 +212,12 @@ strong, b {
     font-weight: 400;
     line-height: 1em;
     z-index: 2;
+}
+
+@media (max-width: 500px) {
+    #mainTiles .tile.thumb h2 {
+        width: 90%;
+    }
 }
 
 #mainTiles .tile.thumb img {
@@ -211,3 +231,4 @@ strong, b {
     object-fit: cover;
     object-position: center;
 }
+
