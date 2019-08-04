@@ -40,7 +40,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     padding: 1em 5em 1em;
-    width: 60em;
+    width: 70em;
 }
 
 @media (max-width: 500px) {
@@ -48,6 +48,7 @@ body{
         display: flex;
         justify-content: space-evenly;
         padding: 1em 1em;
+        width: 90%;
     }
 }
 
@@ -56,16 +57,50 @@ body{
         display: flex;
         justify-content: space-evenly;
         padding: 1em 1em;
+        width: 45em;
     }
 }
 
-
-
-
 .ContactUs{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     align-items: center;
+    padding: 5px;
+    background-color: #d64760;
+    background-image: url(images/overlay.png);
+    padding-top: 0em;
+    padding-left: 0em;
+    opacity: 0.9;
+    margin: 5px;
+    margin-left: 18em;
+    height: 20em;
+    width: 40em;
+    box-shadow: 0 0 0 10px #ffffff;
+    border: 10px ridge #ffffff;
+}
+
+@media (max-width: 500px) {
+    .ContactUs  {
+        width: 83%;
+        
+    }
+}
+
+@media (max-width: 800px) {
+    .ContactUs {
+        margin-left: 1em;
+    }
+}
+
+.contactUs #contactTop {
+    flex-grow: 0;
+    flex-shrink: 0;
+    transition: filter 0.5s ease-in-out;
+    transition: opacity 1s ease-in-out;
+    transition-delay: 0.5s;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
 }
 
 .head{
@@ -77,7 +112,14 @@ body{
 .doyou{
     font-size: 1.5rem;
     line-height: 2.5rem;
-    width: 43%;
+    width: 80%;
+}
+
+@media (max-width: 500px) {
+    .doyou {
+        font-size: 1.0rem;
+        width: 93%;
+    }
 }
 
 
@@ -118,14 +160,22 @@ input:hover{
 }
 
 #submitButton{
-    border:0;
-    background: red;
+    border: 6pt outset #d64760;
+    background: #d64760;
     padding: .5rem;
     color:white;
     margin:1rem 0;
-    width: auto;
+    width: 90%;
     text-transform: uppercase;
+    text-align: center;
     cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    #submitButton {
+        width: 80%;
+        margin-left: 1em;
+    }
 }
 
 #submitButton:hover{
@@ -149,4 +199,3 @@ input:hover{
     }
 }
 
-/*
