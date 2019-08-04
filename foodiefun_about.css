@@ -99,7 +99,7 @@ strong, b {
     display: flex;
     justify-content: space-evenly;
     padding: 1em 5em 1em;
-    width: 60em;
+    width: 70em;
 }
 
 @media (max-width: 500px) {
@@ -115,9 +115,9 @@ strong, b {
 #about-top-content {
     flex-grow: 0;
     flex-shrink: 0;
-    margin: 5px;
-    height: 10em;
-    width: 20em;
+    margin: 1em;
+    height: 7em;
+    width: 18em;
     box-shadow: 0 0 0 10px #ffffff;
     display: flex;
     flex-direction: column;
