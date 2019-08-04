@@ -160,14 +160,22 @@ input:hover{
 }
 
 #submitButton{
-    border:0;
-    background: red;
+    border: 6pt outset #d64760;
+    background: #d64760;
     padding: .5rem;
     color:white;
     margin:1rem 0;
-    width: auto;
+    width: 90%;
     text-transform: uppercase;
+    text-align: center;
     cursor: pointer;
+}
+
+@media (max-width: 500px) {
+    #submitButton {
+        width: 80%;
+        margin-left: 1em;
+    }
 }
 
 #submitButton:hover{
