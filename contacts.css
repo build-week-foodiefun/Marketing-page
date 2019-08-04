@@ -40,7 +40,7 @@ body{
     display: flex;
     justify-content: space-evenly;
     padding: 1em 5em 1em;
-    width: 60em;
+    width: 70em;
 }
 
 @media (max-width: 500px) {
@@ -61,7 +61,7 @@ body{
 
 .ContactUs{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     align-items: center;
     padding: 5px;
     background-color: #d64760;
@@ -74,23 +74,18 @@ body{
     height: 20em;
     width: 40em;
     box-shadow: 0 0 0 10px #ffffff;
+    border: 10px ridge #ffffff;
 }
 
 .contactUs #contactTop {
     flex-grow: 0;
     flex-shrink: 0;
-    
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center; */
     transition: filter 0.5s ease-in-out;
     transition: opacity 1s ease-in-out;
     transition-delay: 0.5s;
     position: relative;
     z-index: 1;
     overflow-x: hidden;
-   
 }
 
 .head{
@@ -102,7 +97,7 @@ body{
 .doyou{
     font-size: 1.5rem;
     line-height: 2.5rem;
-    width: 43%;
+    width: 80%;
 }
 
 
@@ -174,4 +169,3 @@ input:hover{
     }
 }
 
-/*
