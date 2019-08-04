@@ -172,7 +172,8 @@ strong, b {
 
 @media (max-width: 500px) {
 	#about-middle-content  .teamInfo  {
-		width: 19em;
+		width: 80%;
+        margin-left: 8%;
 	}
 }
 
