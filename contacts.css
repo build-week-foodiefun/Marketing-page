@@ -48,6 +48,7 @@ body{
         display: flex;
         justify-content: space-evenly;
         padding: 1em 1em;
+        width: 90%;
     }
 }
 
@@ -56,6 +57,7 @@ body{
         display: flex;
         justify-content: space-evenly;
         padding: 1em 1em;
+        width: 45em;
     }
 }
 
@@ -75,6 +77,19 @@ body{
     width: 40em;
     box-shadow: 0 0 0 10px #ffffff;
     border: 10px ridge #ffffff;
+}
+
+@media (max-width: 500px) {
+    .ContactUs  {
+        width: 83%;
+        
+    }
+}
+
+@media (max-width: 800px) {
+    .ContactUs {
+        margin-left: 1em;
+    }
 }
 
 .contactUs #contactTop {
@@ -98,6 +113,13 @@ body{
     font-size: 1.5rem;
     line-height: 2.5rem;
     width: 80%;
+}
+
+@media (max-width: 500px) {
+    .doyou {
+        font-size: 1.0rem;
+        width: 93%;
+    }
 }
 
 
