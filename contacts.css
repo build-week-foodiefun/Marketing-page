@@ -1,5 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600");
 @import url("fontawesome-all.min.css");
+
+a {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.85);
+    text-decoration: none;
+    transition: color 0.25s ease-in-out;
+}
+
+a:hover {
+    color: #d64760;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
     color: #fff;
@@ -14,12 +26,8 @@ h1, h2, h3, h4, h5, h6 {
     color: rgba(255, 255, 255, 0.6);
  }
 
-
-
-
-
 body{
-    font-family: fantasy;
+    /* font-family: fantasy; */
     background-image: url(images/Veggie\ Zen.jpg);
     min-height: 500px;
     background-attachment: fixed;
@@ -27,6 +35,30 @@ body{
     background-repeat: no repeat;
     background-size: cover;
 }
+
+#navBar .navMenu {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1em 5em 1em;
+    width: 60em;
+}
+
+@media (max-width: 500px) {
+    #navBar .navMenu {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1em 1em;
+    }
+}
+
+@media (max-width: 800px) {
+    #navBar .navMenu {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1em 1em;
+    }
+}
+
 
 
 
@@ -108,3 +140,13 @@ input:hover{
         width: 91%;
     }
 }
+
+
+@media only screen and (max-width: 800px){
+    .doyou{
+        margin: 0;
+        width: 74%;
+    }
+}
+
+/*
