@@ -82,6 +82,12 @@ body {
     width: 100%;
 } 
 
+@media (max-width: 500px) {
+    .bodyClass {
+        max-width: 500px;
+    }
+}
+
 body, input, select, textarea {
     font-family: 'Source Sans Pro';
     font-weight: 400;
