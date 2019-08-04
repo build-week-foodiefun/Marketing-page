@@ -118,7 +118,6 @@ strong, b {
     margin: 1em;
     height: 7em;
     width: 18em;
-    box-shadow: 0 0 0 10px #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -136,6 +135,7 @@ strong, b {
     padding-top: 1em;
     padding-left: 1em;
     opacity: 0.9;
+    border: 10px ridge #ffffff;
 }
 
 #about-top-content  h1  {
@@ -166,7 +166,7 @@ strong, b {
     background-image: url(images/overlay.png);
     padding-top: 1em;
 	margin-top: 5em;
-	box-shadow: 0 0 0 10px #ffffff;
+    border: 10px ridge #ffffff;
 }
 
 @media (max-width: 500px) {
