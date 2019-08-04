@@ -148,7 +148,7 @@ strong, b {
     flex-shrink: 0;
     margin: 5px;
     height: 16em;
-    box-shadow: 0 0 0 10px #ffffff;
+    border: 10px ridge #ffffff;
 }
 
 #mainTiles .tile.span {
