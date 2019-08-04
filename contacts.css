@@ -18,6 +18,10 @@ h1, h2, h3, h4, h5, h6 {
     letter-spacing: -0.05em;
  }
 
+ h2 {
+    margin-block-start: 0.3em;
+    margin-block-end: 0em;
+ }
  body, select, textarea {
     font-family: 'Source Sans Pro';
     font-weight: 400;
@@ -108,7 +112,6 @@ body{
 .head{
     font-size: 3rem;
     text-align: center;
-    text-decoration: underline;
 }
 
 .doyou{
