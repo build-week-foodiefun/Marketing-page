@@ -51,16 +51,18 @@ body{
         width: 19em;
     }
 }
-
-@media (max-width: 800px) {
+    
+/* @media (max-width: 800px) {
     #navBar .navMenu {
         display: flex;
         justify-content: space-evenly;
         padding: 1em 1em;
         width: 45em;
     }
-}
+} */
 
+
+    
 .ContactUs{
     display: flex;
     flex-flow: column nowrap;
