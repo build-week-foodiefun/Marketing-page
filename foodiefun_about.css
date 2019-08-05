@@ -79,7 +79,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: auto;
 } 
+
+@media (max-width: 500px) {
+    .bodyClass {
+        max-width: 500px;
+    }
+}
 
 body, input, select, textarea {
     font-family: 'Source Sans Pro';
@@ -99,7 +106,7 @@ strong, b {
     display: flex;
     justify-content: space-evenly;
     padding: 1em 5em 1em;
-    width: 30em;
+    width: 70em;
 }
 
 @media (max-width: 500px) {
@@ -115,10 +122,9 @@ strong, b {
 #about-top-content {
     flex-grow: 0;
     flex-shrink: 0;
-    margin: 5px;
-    height: 10em;
-    width: 20em;
-    box-shadow: 0 0 0 10px #ffffff;
+    margin: 1em;
+    height: 7em;
+    width: 18em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -136,6 +142,7 @@ strong, b {
     padding-top: 1em;
     padding-left: 1em;
     opacity: 0.9;
+    border: 10px ridge #ffffff;
 }
 
 #about-top-content  h1  {
@@ -166,12 +173,13 @@ strong, b {
     background-image: url(images/overlay.png);
     padding-top: 1em;
 	margin-top: 5em;
-	box-shadow: 0 0 0 10px #ffffff;
+    border: 10px ridge #ffffff;
 }
 
 @media (max-width: 500px) {
 	#about-middle-content  .teamInfo  {
-		width: 19em;
+		width: 80%;
+        margin-left: 8%;
 	}
 }
 
