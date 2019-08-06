@@ -80,11 +80,13 @@ body {
     flex-direction: column;
     align-items: center;
     width: auto;
+    overflow-x: hidden;
 } 
 
 @media (max-width: 500px) {
-    .bodyClass {
+    body {
         max-width: 500px;
+        width: auto;
     }
 }
 
@@ -94,6 +96,16 @@ body, input, select, textarea {
     padding: 0;
     font-size: 13pt;
     color: rgba(255, 255, 255, 0.6);
+}
+
+header {
+    width: 100%;
+}
+
+@media (max-width: 500px) {
+    header {
+        margin-right: 60%;
+    }
 }
 
 strong, b {
@@ -106,7 +118,6 @@ strong, b {
     display: flex;
     justify-content: space-evenly;
     padding: 1em 5em 1em;
-    width: 70em;
 }
 
 @media (max-width: 500px) {
@@ -120,21 +131,24 @@ strong, b {
 }
 
 #about-top-content {
+    max-width: 100%;
+    width: 50%;
     flex-grow: 0;
     flex-shrink: 0;
     margin: 1em;
     height: 7em;
-    width: 18em;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
     transition: filter 0.5s ease-in-out;
     transition: opacity 1s ease-in-out;
     transition-delay: 0.5s;
     position: relative;
     z-index: 1;
-    max-width: 30em;
+
     overflow-x: hidden;
     padding: 5px;
     background-color: #d64760;
@@ -169,6 +183,9 @@ strong, b {
 }
 
 #about-middle-content  .teamInfo { 
+    max-width: 100%;
+    width: 45%;
+    margin-left: 27%;
     background-color: #d64760;
     background-image: url(images/overlay.png);
     padding-top: 1em;
@@ -191,6 +208,15 @@ strong, b {
     
 }
 
+@media (max-width: 500px) {
+    .teamInfo h1 {
+    max-width: 100%;
+    width: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    }
+}
+
 .teamInfo p {
     font-size: 1.25em;
     line-height: 1.5em;
@@ -202,10 +228,9 @@ strong, b {
 }
 
 .teamInfo img {
-    height: 15em;
-    width: 30em;
+    width: 75%;
     padding-top: 2em;
-	padding-left: 2.5em;
+	padding-left: 12%;
 	max-width: 100%;
 	height: auto;
 	border-bottom: 1em solid white;
@@ -213,10 +238,8 @@ strong, b {
 
 @media (max-width: 500px) {
 	.teamInfo img {
-		height: 15em;
-		width: 30em;
+		width: 80%;
 		padding-top: 2em;
-		padding-left: 0em;
 		padding-bottom: 2.5em;
 		max-width: 100%;
 		height: auto;
