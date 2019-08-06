@@ -236,11 +236,9 @@ strong, b {
 .teamInfo img {
     width: 75%;
     padding-top: 2em;
-	padding-left: 12%;
 	max-width: 100%;
 	height: auto;
-    border-bottom: 1em solid white;
-}
+} 
 
 @media (max-width: 500px) {
 	.teamInfo img {
