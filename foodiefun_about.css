@@ -80,11 +80,13 @@ body {
     flex-direction: column;
     align-items: center;
     width: auto;
+    overflow-x: hidden;
 } 
 
 @media (max-width: 500px) {
-    .bodyClass {
+    body {
         max-width: 500px;
+        width: auto;
     }
 }
 
@@ -96,6 +98,11 @@ body, input, select, textarea {
     color: rgba(255, 255, 255, 0.6);
 }
 
+header {
+    width: 100%;
+}
+
+
 strong, b {
     color: #fff;
     color: rgba(255, 255, 255, 0.85);
@@ -106,35 +113,38 @@ strong, b {
     display: flex;
     justify-content: space-evenly;
     padding: 1em 5em 1em;
-    width: 70em;
 }
 
 @media (max-width: 500px) {
 	#nav-about-page  nav {
 		display: flex;
 		justify-content: space-evenly;
-		padding: 1em 5em 1em;
-		width: 25em;
+		padding: 1em 0em 1em;
+		width: 100%;
 	}
 
 }
+.aboutHeader{
+    width: 100%;
+}
 
 #about-top-content {
+    max-width: 100%;
+    width: 50%;
     flex-grow: 0;
     flex-shrink: 0;
     margin: 1em;
     height: 7em;
-    width: 18em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+
     transition: filter 0.5s ease-in-out;
     transition: opacity 1s ease-in-out;
     transition-delay: 0.5s;
     position: relative;
     z-index: 1;
-    max-width: 30em;
     overflow-x: hidden;
     padding: 5px;
     background-color: #d64760;
@@ -143,6 +153,7 @@ strong, b {
     padding-left: 1em;
     opacity: 0.9;
     border: 10px ridge #ffffff;
+    box-sizing: border-box;
 }
 
 #about-top-content  h1  {
@@ -164,31 +175,53 @@ strong, b {
 		font-size: .9em;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+        justify-content: center;
+        width: 90%;
 	}
 }
 
+#about-middle-content{
+    display: flex;
+    justify-content: center;
+}
+
 #about-middle-content  .teamInfo { 
+    width: 40%;
     background-color: #d64760;
     background-image: url(images/overlay.png);
     padding-top: 1em;
-	margin-top: 5em;
+    margin-top: 5em;
     border: 10px ridge #ffffff;
+    box-sizing: border-box;
 }
 
 @media (max-width: 500px) {
 	#about-middle-content  .teamInfo  {
-		width: 80%;
-        margin-left: 8%;
+		width: 90%;
 	}
 }
+
+.teamInfo div{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
 
 .teamInfo h1 {
     font-size: 3em;
     line-height: 1em;
-    padding-left: 1em;
     padding-top: 1em;
     
+}
+
+@media (max-width: 500px) {
+    .teamInfo h1 {
+    max-width: 100%;
+    width: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    }
 }
 
 .teamInfo p {
@@ -196,29 +229,22 @@ strong, b {
     line-height: 1.5em;
     margin: 0.5em 0 0 0;
     opacity: 0.65;
-    padding-left: 2.5em;
     padding-bottom: 1em;
   
 }
 
 .teamInfo img {
-    height: 15em;
-    width: 30em;
+    width: 75%;
     padding-top: 2em;
-	padding-left: 2.5em;
 	max-width: 100%;
 	height: auto;
-	border-bottom: 1em solid white;
-}
+} 
 
 @media (max-width: 500px) {
 	.teamInfo img {
-		height: 15em;
-		width: 30em;
+		width: 80%;
 		padding-top: 2em;
-		padding-left: 0em;
 		padding-bottom: 2.5em;
-		max-width: 100%;
 		height: auto;
 	}
 }
