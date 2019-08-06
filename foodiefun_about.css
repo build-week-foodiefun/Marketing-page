@@ -102,11 +102,6 @@ header {
     width: 100%;
 }
 
-@media (max-width: 500px) {
-    header {
-        margin-right: 60%;
-    }
-}
 
 strong, b {
     color: #fff;
