@@ -124,10 +124,13 @@ strong, b {
 	#nav-about-page  nav {
 		display: flex;
 		justify-content: space-evenly;
-		padding: 1em 5em 1em;
-		width: 25em;
+		padding: 1em 0em 1em;
+		width: 100%;
 	}
 
+}
+.aboutHeader{
+    width: 100%;
 }
 
 #about-top-content {
@@ -137,7 +140,6 @@ strong, b {
     flex-shrink: 0;
     margin: 1em;
     height: 7em;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -148,7 +150,6 @@ strong, b {
     transition-delay: 0.5s;
     position: relative;
     z-index: 1;
-
     overflow-x: hidden;
     padding: 5px;
     background-color: #d64760;
@@ -157,6 +158,7 @@ strong, b {
     padding-left: 1em;
     opacity: 0.9;
     border: 10px ridge #ffffff;
+    box-sizing: border-box;
 }
 
 #about-top-content  h1  {
@@ -178,8 +180,15 @@ strong, b {
 		font-size: .9em;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+        justify-content: center;
+        width: 90%;
 	}
+}
+
+#about-middle-content{
+    display: flex;
+    justify-content: center;
+    max-width: 500px;
 }
 
 #about-middle-content  .teamInfo { 
@@ -189,21 +198,27 @@ strong, b {
     background-color: #d64760;
     background-image: url(images/overlay.png);
     padding-top: 1em;
-	margin-top: 5em;
+    margin-top: 5em;
     border: 10px ridge #ffffff;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.teamInfo div{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
 }
 
 @media (max-width: 500px) {
 	#about-middle-content  .teamInfo  {
-		width: 80%;
-        margin-left: 8%;
+		width: 90%;
 	}
 }
 
 .teamInfo h1 {
     font-size: 3em;
     line-height: 1em;
-    padding-left: 1em;
     padding-top: 1em;
     
 }
@@ -222,7 +237,6 @@ strong, b {
     line-height: 1.5em;
     margin: 0.5em 0 0 0;
     opacity: 0.65;
-    padding-left: 2.5em;
     padding-bottom: 1em;
   
 }
@@ -233,7 +247,7 @@ strong, b {
 	padding-left: 12%;
 	max-width: 100%;
 	height: auto;
-	border-bottom: 1em solid white;
+    border-bottom: 1em solid white;
 }
 
 @media (max-width: 500px) {
@@ -241,7 +255,6 @@ strong, b {
 		width: 80%;
 		padding-top: 2em;
 		padding-bottom: 2.5em;
-		max-width: 100%;
 		height: auto;
 	}
 }
